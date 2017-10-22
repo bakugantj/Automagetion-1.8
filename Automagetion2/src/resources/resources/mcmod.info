@@ -1,0 +1,19 @@
+[
+{
+"modid": "automagetion",
+"name": "Automagetion",
+"description": "Can't believe its not sold? Build factories to produce magical and musical spells and artifacts.",
+"version": "1.0",
+"credits": "Created by Contrailan and BaconianMethod",
+"logoFile": "assets/automagetion/automagetionLogo.png",
+"mcversion": "",
+"url": "",
+"updateUrl": "",
+"authors": [ "Contrailan", "BaconianMethod" ],
+"parent":"",
+"screenshots": [],
+"dependencies": [
+"mod_MinecraftForge"
+]
+}
+]
