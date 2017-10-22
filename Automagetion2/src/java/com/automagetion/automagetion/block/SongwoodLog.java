@@ -1,6 +1,6 @@
 package com.automagetion.automagetion.block;
 
-import com.automagetion.automagetion.client.render.items.*;
+import com.automagetion.automagetion.block.*;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;

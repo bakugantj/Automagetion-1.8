@@ -3,6 +3,7 @@ package com.automagetion.automagetion.item;
 import java.util.List;
 
 import com.automagetion.automagetion.Main;
+
 import com.automagetion.automagetion.item.ItemRenderRegister;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -28,7 +29,7 @@ public class Broom extends Item
 	}
 	
 	@SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister reg)
+    public void registerIcons(ItemRenderRegister reg)
     {
 		this.iconArray = new IIcon[2]; //Stores the two textures
         this.iconArray[0] = reg.registerIcon(this.getIconString()); //Normal

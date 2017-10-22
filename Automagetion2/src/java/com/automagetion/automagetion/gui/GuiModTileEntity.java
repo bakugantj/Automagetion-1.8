@@ -34,6 +34,6 @@ public class GuiModTileEntity extends GuiContainer
 	{
 	    String s = this.te.getInventoryName();
 	    this.fontRendererObj.drawString(s, 88 - this.fontRendererObj.getStringWidth(s) / 2, 6, 4210752);            //#404040
-	    this.fontRendererObj.drawString(this.playerInv.getInventoryName(), 8, 72, 4210752);      //#404040
+	    this.fontRendererObj.drawString(((ModStorage) this.playerInv).getInventoryName(), 8, 72, 4210752);      //#404040
 	}
 }
