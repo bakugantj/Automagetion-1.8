@@ -23,11 +23,12 @@ public class Broom extends Item
 	private Icon[] iconArray; //Used to store the two different animation textures
 	private int animIndex; //Used to create animation
 	private final int sweepTime = 3; //Duration of sweep out
+	private Icon itemIcon;
 	
 	Broom()
 	{
 		super();
-		this.setUnlocalizedName("broom").setTextureName(Main.MODID + ":broom").setCreativeTab(ModItems.tabAutomagetion).setMaxStackSize(1);
+		this.setUnlocalizedName("broom").setCreativeTab(ModItems.tabAutomagetion).setMaxStackSize(1);
 	}
 	
 	@SideOnly(Side.CLIENT)

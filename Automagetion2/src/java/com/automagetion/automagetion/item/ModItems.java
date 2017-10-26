@@ -47,7 +47,7 @@ public final class ModItems
     	//Initialize items with basic information
    	chantRootFibers = new Item().setUnlocalizedName("chantRootFibers").setCreativeTab(tabAutomagetion);
     	chantRoot = new Item().setUnlocalizedName("chantRoot").setCreativeTab(tabAutomagetion);
-    	broom = new Broom();
+    	//broom = new Broom();
     	whistlingReed = new Item().setUnlocalizedName("whistlingReed").setCreativeTab(tabAutomagetion);
     	songPaper = new Item().setUnlocalizedName("songPaper").setCreativeTab(tabAutomagetion);
     	reedAssembly = new Item().setUnlocalizedName("reedAssembly").setCreativeTab(tabAutomagetion);

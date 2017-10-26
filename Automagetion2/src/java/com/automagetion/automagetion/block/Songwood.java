@@ -19,8 +19,8 @@ public class Songwood extends Block
 	protected Songwood(String addenum) 
 	{
 		super(Material.wood);
-		this.setBlockName("songwood" + addenum);
-		this.setBlockTextureName(Main.MODID + ":songwood" + addenum);
+		//this.setBlockName("songwood" + addenum);
+		//this.setBlockTextureName(Main.MODID + ":songwood" + addenum);
         this.setCreativeTab(ModItems.tabAutomagetion);
         this.setHardness(2.0F);
         this.setResistance(6.0F);

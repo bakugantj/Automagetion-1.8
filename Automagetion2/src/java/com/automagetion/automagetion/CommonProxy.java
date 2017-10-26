@@ -20,15 +20,15 @@ public class CommonProxy
     {
     	//Register new in-game features
     	ModItems.init();
-    	ModBlocks.init();
+    	//ModBlocks.init();
     	ModTileEntities.init();
     	BasicCrafting.init();
     	
     	//Gui handlers
-    	NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new ModGuiHandler());
+    	//NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new ModGuiHandler());
     	
     	//Register event handlers
-    	MinecraftForge.EVENT_BUS.register(new BroomEventHandler());
+    	//MinecraftForge.EVENT_BUS.register(new BroomEventHandler());
     }
 
     public void init(FMLInitializationEvent e) 

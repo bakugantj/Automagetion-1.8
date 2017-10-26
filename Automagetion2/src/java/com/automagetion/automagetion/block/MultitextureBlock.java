@@ -11,23 +11,23 @@ import net.minecraft.block.material.Material;
 
 public class MultitextureBlock extends Block
 {
-	public Icon[] icons = new Icon[6]; 
+	public Icon[] icons = new Icon[6];
+	private String textureName; 
 	
 	protected MultitextureBlock(String unlocalizedName, Material material) 
     { 
         super(material);
-        this.setBlockName(unlocalizedName);
-        this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
+        //this.setBlockName(unlocalizedName);
+        //this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
         this.setCreativeTab(ModItems.tabAutomagetion);
         this.setHardness(2.0F);
         this.setResistance(6.0F);
         this.setStepSound(soundTypeWood);
     }
 	
-	@Override
-	public void registerBlockIcons(ItemIconRegister reg)
+	public void registerBlockIcons(BlockRenderRegister reg)
 	{
-		this.icons[0] = reg.registerIcon(this.textureName + "_0");
+		this.icons[0] = reg.registerIcon(this.textureName  + "_0");
 		this.icons[1] = reg.registerIcon(this.textureName + "_1");
 		this.icons[2] = reg.registerIcon(this.textureName + "_2");
 		this.icons[3] = reg.registerIcon(this.textureName + "_3");

@@ -2,9 +2,6 @@ package com.automagetion.automagetion.block;
 
 import javax.swing.Icon;
 
-import com.automagetion.automagetion.block.*;
-import com.automagetion.automagetion.item.ItemRenderRegister;
-
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -12,7 +9,7 @@ import net.minecraft.world.World;
 public class SongwoodLog extends Songwood
 {
 	private Icon[] icons = new Icon[3];
-	private String textureName = "SongwoodLog";
+	//private String textureName = "SongwoodLog";
 	
 	protected SongwoodLog() 
 	{
@@ -21,9 +18,9 @@ public class SongwoodLog extends Songwood
 	
 	public void registerBlockIcons(BlockRenderRegister reg)
 	{
-		this.icons[0] = reg.register(this.textureName  + "_top");
-		this.icons[1] = reg.register(this.textureName + "_side");
-		this.icons[2] = reg.register(this.textureName + "_side2");
+		//this.icons[0] = reg.register(this.textureName  + "_top");
+		//this.icons[1] = reg.register(this.textureName + "_side");
+		//this.icons[2] = reg.register(this.textureName + "_side2");
 	}
 	
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack) 
@@ -53,7 +50,7 @@ public class SongwoodLog extends Songwood
 		}
 		meta += 1; //0 cannot be used for metadata
 		System.out.println("meta for log is " + meta);
-		((Object) world).setBlockMetadataWithNotify(x, y, z, meta, 2);
+		//((Object) world).setBlockMetadataWithNotify(x, y, z, meta, 2);
 	}
 	
 	@Override
