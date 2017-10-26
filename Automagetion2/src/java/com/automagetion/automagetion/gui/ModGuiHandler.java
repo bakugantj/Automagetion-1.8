@@ -17,7 +17,7 @@ public class ModGuiHandler implements IGuiHandler
 		switch (ID)
 		{
 			case VIBRATORIUM_GUI:
-				return new ContainerVibratoriumEntity(player.inventory, (VibratoriumEntity)world.getTileEntity(x, y, z));
+				return new ContainerVibratoriumEntity(player.inventory, (VibratoriumEntity)world);
 
 			
 		}
@@ -30,7 +30,7 @@ public class ModGuiHandler implements IGuiHandler
 		switch(ID)
 		{
 			case VIBRATORIUM_GUI:
-				return new GuiVibratoriumEntity(player.inventory, (VibratoriumEntity)world.getTileEntity(x, y, z));
+				return new GuiVibratoriumEntity(player.inventory, (VibratoriumEntity)world);
 			
 		}
 		return null;

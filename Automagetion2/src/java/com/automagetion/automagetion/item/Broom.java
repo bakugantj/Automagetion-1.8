@@ -2,6 +2,8 @@ package com.automagetion.automagetion.item;
 
 import java.util.List;
 
+import javax.swing.Icon;
+
 import com.automagetion.automagetion.Main;
 
 import com.automagetion.automagetion.item.ItemRenderRegister;
@@ -18,7 +20,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class Broom extends Item
 {
 	@SideOnly(Side.CLIENT)
-	private IIcon[] iconArray; //Used to store the two different animation textures
+	private Icon[] iconArray; //Used to store the two different animation textures
 	private int animIndex; //Used to create animation
 	private final int sweepTime = 3; //Duration of sweep out
 	
@@ -31,7 +33,7 @@ public class Broom extends Item
 	@SideOnly(Side.CLIENT)
     public void registerIcons(ItemRenderRegister reg)
     {
-		this.iconArray = new IIcon[2]; //Stores the two textures
+		this.iconArray = new Icon[2]; //Stores the two textures
         this.iconArray[0] = reg.registerIcon(this.getIconString()); //Normal
         System.out.println("iconstring: " + this.getIconString());
         this.iconArray[1] = reg.registerIcon(this.getIconString() + "_sweep"); //"Sweeping"
@@ -50,6 +52,7 @@ public class Broom extends Item
     	return animIndex > 0 ? this.iconArray[1] : this.iconArray[0];
     }
     
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
 	{		
@@ -159,7 +162,8 @@ public class Broom extends Item
 		aoe = AxisAlignedBB.getBoundingBox(xmin, ymin, zmin, xmax, ymax, zmax); //Hey, that's the aoe of the sweep!	
 	
 		//Detect item entities withing that aoe	
-		List<EntityItem> aoeEntities = world.getEntitiesWithinAABB(EntityItem.class, aoe); //Filtered to only items
+		List entitiesWithinAABB = world.getEntitiesWithinAABB(EntityItem.class, aoe);
+		List<EntityItem> aoeEntities = entitiesWithinAABB; //Filtered to only items
 		
 		//Apply a velocity to each of those items for a short duration
 		//System.out.println(aoeEntities);

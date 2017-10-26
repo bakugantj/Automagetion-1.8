@@ -1,20 +1,22 @@
 package com.automagetion.automagetion.tileentity;
 
+import javax.swing.Icon;
+
 import com.automagetion.automagetion.Main;
+import com.automagetion.automagetion.block.BlockRenderRegister;
 import com.automagetion.automagetion.gui.ModGuiHandler;
 import com.automagetion.automagetion.item.ModItems;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 public class VibratoriumEntityBlock extends ModStorageBlock
 {
-	public IIcon[] icons = new IIcon[7];
+	public Icon[] icons = new Icon[7];
+	private String textureName = "Vibratorium";
 	
 	public VibratoriumEntityBlock()
 	{
@@ -55,11 +57,10 @@ public class VibratoriumEntityBlock extends ModStorageBlock
 	}
 
 	
-	@Override
-	public void registerBlockIcons(IIconRegister reg)
+	public void registerBlockIcons(BlockRenderRegister reg)
 	{
-		this.icons[0] = reg.registerIcon(this.textureName + "_0"); //Bottom
-		this.icons[1] = reg.registerIcon(this.textureName + "_1"); //Top
+		this.icons[0] = reg.register(this.textureName  + "_0"); //Bottom
+		this.icons[1] = reg.register(this.textureName + "_1"); //Top
 		this.icons[2] = reg.registerIcon(this.textureName + "_2"); //Back
 		this.icons[3] = reg.registerIcon(this.textureName + "_3"); //Front
 		this.icons[4] = reg.registerIcon(this.textureName + "_4"); //Left
@@ -67,8 +68,7 @@ public class VibratoriumEntityBlock extends ModStorageBlock
 		this.icons[6] = reg.registerIcon(this.textureName + "_6"); //Rotated Top
 	}
 	
-	@Override
-	public IIcon getIcon(int side, int meta)
+	public Icon getIcon(int side, int meta)
 	{
 		if (side == 0)
 		{

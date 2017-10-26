@@ -1,16 +1,17 @@
 package com.automagetion.automagetion.block;
 
+import javax.swing.Icon;
+
 import com.automagetion.automagetion.Main;
 import com.automagetion.automagetion.item.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.util.IIcon;
+
 
 public class MultitextureBlock extends Block
 {
-	public IIcon[] icons = new IIcon[6]; 
+	public Icon[] icons = new Icon[6]; 
 	
 	protected MultitextureBlock(String unlocalizedName, Material material) 
     { 
@@ -24,7 +25,7 @@ public class MultitextureBlock extends Block
     }
 	
 	@Override
-	public void registerBlockIcons(IIconRegister reg)
+	public void registerBlockIcons(ItemIconRegister reg)
 	{
 		this.icons[0] = reg.registerIcon(this.textureName + "_0");
 		this.icons[1] = reg.registerIcon(this.textureName + "_1");
@@ -34,8 +35,7 @@ public class MultitextureBlock extends Block
 		this.icons[5] = reg.registerIcon(this.textureName + "_5");
 	}
 	
-	@Override
-	public IIcon getIcon(int side, int meta)
+	public Icon getIcon(int side, int meta)
 	{
 		if (side == 0)
 		{

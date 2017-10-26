@@ -1,7 +1,5 @@
 package com.automagetion.automagetion.item;
 
-import com.automagetion.automagetion.Main;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -47,47 +45,47 @@ public final class ModItems
     public static final void init() 
     {
     	//Initialize items with basic information
-   	chantRootFibers = ((Object) new Item().setUnlocalizedName("chantRootFibers").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":chantRootFibers");
-    	chantRoot = ((Object) new Item().setUnlocalizedName("chantRoot").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":chantRoot");
+   	chantRootFibers = new Item().setUnlocalizedName("chantRootFibers").setCreativeTab(tabAutomagetion);
+    	chantRoot = new Item().setUnlocalizedName("chantRoot").setCreativeTab(tabAutomagetion);
     	broom = new Broom();
-    	whistlingReed = ((Object) new Item().setUnlocalizedName("whistlingReed").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":whistlingReed");
-    	songPaper = ((Object) new Item().setUnlocalizedName("songPaper").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":songPaper");
-    	reedAssembly = ((Object) new Item().setUnlocalizedName("reedAssembly").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":reedAssembly");
-    	songwoodSapling = ((Object) new Item().setUnlocalizedName("songwoodSapling").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":songwoodSapling");
+    	whistlingReed = new Item().setUnlocalizedName("whistlingReed").setCreativeTab(tabAutomagetion);
+    	songPaper = new Item().setUnlocalizedName("songPaper").setCreativeTab(tabAutomagetion);
+    	reedAssembly = new Item().setUnlocalizedName("reedAssembly").setCreativeTab(tabAutomagetion);
+    	songwoodSapling = new Item().setUnlocalizedName("songwoodSapling").setCreativeTab(tabAutomagetion);
     	
     	//Melodies
     	cantio = new Melody();
-    	//((Object) cantio.setUnlocalizedName("cantio").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":cantio");
+    	cantio.setUnlocalizedName("cantio").setCreativeTab(tabAutomagetion);
     	sopio = new Melody();
-    	//((Object) sopio.setUnlocalizedName("sopio").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":sopio");
+    	sopio.setUnlocalizedName("sopio").setCreativeTab(tabAutomagetion);
     	bellum = new Melody();
-    	//((Object) bellum.setUnlocalizedName("bellum").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":bellum");
+    	bellum.setUnlocalizedName("bellum").setCreativeTab(tabAutomagetion);
     	pax = new Melody();
-    	//((Object) pax.setUnlocalizedName("pax").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":pax");
+    	pax.setUnlocalizedName("pax").setCreativeTab(tabAutomagetion);
     	infernum = new Melody();
-    	//((Object) infernum.setUnlocalizedName("infernum").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":infernum");
+    	infernum.setUnlocalizedName("infernum").setCreativeTab(tabAutomagetion);
     	caelum = new Melody();
-    	//((Object) caelum.setUnlocalizedName("caelum").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":caelum");
+    	caelum.setUnlocalizedName("caelum").setCreativeTab(tabAutomagetion);
     	mundus = new Melody();
-    	//((Object) mundus.setUnlocalizedName("mundus").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":mundus");
+    	mundus.setUnlocalizedName("mundus").setCreativeTab(tabAutomagetion);
     	inanis = new Melody();
-    	//((Object) inanis.setUnlocalizedName("inanis").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":inanis");
+    	inanis.setUnlocalizedName("inanis").setCreativeTab(tabAutomagetion);
     	natura = new Melody();
-    	//((Object) natura.setUnlocalizedName("natura").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":natura");
+    	natura.setUnlocalizedName("natura").setCreativeTab(tabAutomagetion);
     	funus = new Melody();
-    	//((Object) funus.setUnlocalizedName("funus").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":funus");
+    	funus.setUnlocalizedName("funus").setCreativeTab(tabAutomagetion);
     	calor = new Melody();
-    	//((Object) calor.setUnlocalizedName("calor").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":calor");
+    	calor.setUnlocalizedName("calor").setCreativeTab(tabAutomagetion);
     	irrigus = new Melody();
-    	//((Object) irrigus.setUnlocalizedName("irrigus").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":irrigus");
+    	irrigus.setUnlocalizedName("irrigus").setCreativeTab(tabAutomagetion);
     	creo = new Melody();
-    	//((Object) creo.setUnlocalizedName("creo").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":creo");
+    	creo.setUnlocalizedName("creo").setCreativeTab(tabAutomagetion);
     	evorsio = new Melody();
-    	//((Object) evorsio.setUnlocalizedName("evorsio").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":evorsio");
+    	evorsio.setUnlocalizedName("evorsio").setCreativeTab(tabAutomagetion);
     	imperium = new Melody();
-    	//((Object) imperium.setUnlocalizedName("imperium").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":imperium");
+    	imperium.setUnlocalizedName("imperium").setCreativeTab(tabAutomagetion);
     	animo = new Melody();
-    	//((Object) animo.setUnlocalizedName("animo").setCreativeTab(tabAutomagetion)).setTextureName(Main.MODID + ":animo"); 
+    	animo.setUnlocalizedName("animo").setCreativeTab(tabAutomagetion); 
     	
     	//Registering items with forge
     	GameRegistry.registerItem(chantRootFibers, "chantRootFibers");

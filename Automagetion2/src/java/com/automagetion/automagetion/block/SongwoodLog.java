@@ -1,26 +1,29 @@
 package com.automagetion.automagetion.block;
 
+import javax.swing.Icon;
+
 import com.automagetion.automagetion.block.*;
+import com.automagetion.automagetion.item.ItemRenderRegister;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 public class SongwoodLog extends Songwood
 {
-	private IIcon[] icons = new IIcon[3];
+	private Icon[] icons = new Icon[3];
+	private String textureName = "SongwoodLog";
 	
 	protected SongwoodLog() 
 	{
 		super("Log");	
 	}
 	
-	@Override
-	public void registerBlockIcons(IIconRegister reg)
+	public void registerBlockIcons(BlockRenderRegister reg)
 	{
-		this.icons[0] = reg.registerIcon(this.textureName + "_top");
-		this.icons[1] = reg.registerIcon(this.textureName + "_side");
-		this.icons[2] = reg.registerIcon(this.textureName + "_side2");
+		this.icons[0] = reg.register(this.textureName  + "_top");
+		this.icons[1] = reg.register(this.textureName + "_side");
+		this.icons[2] = reg.register(this.textureName + "_side2");
 	}
 	
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack) 
@@ -50,11 +53,11 @@ public class SongwoodLog extends Songwood
 		}
 		meta += 1; //0 cannot be used for metadata
 		System.out.println("meta for log is " + meta);
-		world.setBlockMetadataWithNotify(x, y, z, meta, 2);
+		((Object) world).setBlockMetadataWithNotify(x, y, z, meta, 2);
 	}
 	
 	@Override
-	public IIcon getIcon(int side, int meta)
+	public Icon getIcon(int side, int meta)
 	{
 		meta -= 1;
 		int id = 0; //Texture number

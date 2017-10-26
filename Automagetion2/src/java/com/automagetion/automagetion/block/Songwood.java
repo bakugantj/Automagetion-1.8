@@ -1,5 +1,7 @@
 package com.automagetion.automagetion.block;
 
+import javax.swing.Icon;
+
 import com.automagetion.automagetion.Main;
 import com.automagetion.automagetion.item.ModItems;
 
@@ -25,6 +27,11 @@ public class Songwood extends Block
         this.setLightLevel(1.0F);
         this.setHarvestLevel("axe", 2);
         this.setStepSound(soundTypeWood);
+	}
+
+	public Icon getIcon(int side, int meta) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
