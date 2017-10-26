@@ -1,0 +1,8 @@
+{
+    "parent":
+    	"automagetion:items/standard_item",
+    "textures":
+    {
+    	"layer0":"automagetion:items/broom_sweep"
+    }
+}

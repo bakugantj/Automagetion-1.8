@@ -12,7 +12,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -30,28 +29,6 @@ public class Broom extends Item
 		super();
 		this.setUnlocalizedName("broom").setCreativeTab(ModItems.tabAutomagetion).setMaxStackSize(1);
 	}
-	
-	@SideOnly(Side.CLIENT)
-    public void registerIcons(ItemRenderRegister reg)
-    {
-		this.iconArray = new Icon[2]; //Stores the two textures
-        this.iconArray[0] = reg.registerIcon(this.getIconString()); //Normal
-        System.out.println("iconstring: " + this.getIconString());
-        this.iconArray[1] = reg.registerIcon(this.getIconString() + "_sweep"); //"Sweeping"
-		this.itemIcon = iconArray[0]; //Default is normal
-    }
-	
-	public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_)
-    {
-        return false;
-    }
-	
-    public IIcon getIcon(ItemStack stack, int renderPass, EntityPlayer player, ItemStack usingItem, int useRemaining)
-    {	
-    	//System.out.println("broomAnimIndex: " + animIndex);
-    	animIndex = animIndex < 0 ? 0 : animIndex - 1;
-    	return animIndex > 0 ? this.iconArray[1] : this.iconArray[0];
-    }
     
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override
