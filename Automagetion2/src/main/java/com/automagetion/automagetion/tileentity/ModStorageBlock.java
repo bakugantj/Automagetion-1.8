@@ -14,9 +14,9 @@ public abstract class ModStorageBlock extends BlockContainer
 		super(mat);
 	}
 	
-	public void breakBlock(World world, int x, int y, int z, Block p_149749_5_, int p_149749_6_)
+	/*public void breakBlock(World world, int x, int y, int z, Block p_149749_5_, int p_149749_6_)
 	{
-		ModStorage mte = (ModStorage)world.getTileEntity(x, y, z); //Finds this block's buddy
+		//ModStorage mte = (ModStorage)world.getTileEntity(x, y, z); //Finds this block's buddy
 	
 		for (int s = 0; s <= mte.getSizeInventory(); s++) //Goes through its inventory
 		{
@@ -26,12 +26,12 @@ public abstract class ModStorageBlock extends BlockContainer
 			}
 			System.out.println(mte.getStackInSlot(s));
 		}
-		super.breakBlock(world, x, y, z, p_149749_5_, p_149749_6_); //Removes the tile entity, etc
+		//super.breakBlock(world, x, y, z, p_149749_5_, p_149749_6_); //Removes the tile entity, etc
 	}
 
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int someInt,
 			float p_149727_7_, float p_149727_8_, float p_149727_9_) {
 		// TODO Auto-generated method stub
 		return false;
-	}
+	}*/
 }

@@ -20,7 +20,7 @@ public class ClientProxy extends CommonProxy
     {
     	super.init(e);
     	ItemRenderRegister.registerItemRenderer();
-    	BlockRenderRegister.registerBlockRenderer();
+    	//BlockRenderRegister.registerBlockRenderer();
     }
 
 	@Override

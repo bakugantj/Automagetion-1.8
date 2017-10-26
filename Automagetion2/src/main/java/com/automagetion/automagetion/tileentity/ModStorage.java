@@ -70,7 +70,7 @@ public abstract class ModStorage extends TileEntity implements IInventory
 
 	public void updateEntity()
 	{
-		super.updateEntity();
+		//super.updateEntity();
 		/*
 		for (int s = 0; s <= this.getSizeInventory(); s++) //Goes through its inventory
 		{
@@ -167,19 +167,19 @@ public abstract class ModStorage extends TileEntity implements IInventory
 		return 64;
 	}
 
-	@Override
-	public boolean isUseableByPlayer(EntityPlayer player) 
-	{
-	    return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) == this && player.getDistanceSq(this.xCoord + 0.5, this.yCoord + 0.5, this.zCoord + 0.5) <= 64;
+	//@Override
+	//public boolean isUseableByPlayer(EntityPlayer player) 
+	//{
+	  //  return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) == this && player.getDistanceSq(this.xCoord + 0.5, this.yCoord + 0.5, this.zCoord + 0.5) <= 64;
 	    //I am uncertain as to why the above line recommends adding 0.5 to all dimensions before displacement comparison
-	}
+	//}
 
-	public void openInventory() 
+	//public void openInventory() 
 	{
 		
 	}
 
-	public void closeInventory() 
+	//public void closeInventory() 
 	{
 		
 	}

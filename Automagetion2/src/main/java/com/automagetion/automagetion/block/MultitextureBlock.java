@@ -25,7 +25,7 @@ public class MultitextureBlock extends Block
         this.setStepSound(soundTypeWood);
     }
 	
-	public void registerBlockIcons(BlockRenderRegister reg)
+	/*public void registerBlockIcons(BlockRenderRegister reg)
 	{
 		this.icons[0] = reg.registerIcon(this.textureName  + "_0");
 		this.icons[1] = reg.registerIcon(this.textureName + "_1");
@@ -66,5 +66,5 @@ public class MultitextureBlock extends Block
 			id = (id == 2) ? 2 : id;
 			return this.icons[id];
 		}
-	}
+	}*/
 }

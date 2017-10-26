@@ -12,7 +12,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -30,9 +29,7 @@ public class Broom extends Item
 		super();
 		this.setUnlocalizedName("broom").setCreativeTab(ModItems.tabAutomagetion).setMaxStackSize(1);
 	}
-	
-	@SideOnly(Side.CLIENT)
-    public void registerIcons(ItemRenderRegister reg)
+	/*public void registerIcons(ItemRenderRegister reg)
     {
 		this.iconArray = new Icon[2]; //Stores the two textures
         this.iconArray[0] = reg.registerIcon(this.getIconString()); //Normal
@@ -175,6 +172,6 @@ public class Broom extends Item
 		}
 		//Keep broom in its slot
 		return item;
-	}
+	}*/
 			
 }

@@ -21,7 +21,7 @@ public class CommonProxy
     	//Register new in-game features
     	ModItems.init();
     	//ModBlocks.init();
-    	ModTileEntities.init();
+    	//ModTileEntities.init();
     	BasicCrafting.init();
     	
     	//Gui handlers

@@ -9,8 +9,8 @@ public class ModTileEntities
 	
 	public static void init()
 	{
-		vibratorium = new VibratoriumEntity();
-		vibratoriumBlock = new VibratoriumEntityBlock();
+		//vibratorium = new VibratoriumEntity();
+		//vibratoriumBlock = new VibratoriumEntityBlock();
 		
 		
 		GameRegistry.registerTileEntity(VibratoriumEntity.class, "vibratorium");

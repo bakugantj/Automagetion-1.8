@@ -3,7 +3,7 @@ package com.automagetion.automagetion.tileentity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.IChatComponent;
 
-public class VibratoriumEntity extends ModStorage
+public abstract class VibratoriumEntity extends ModStorage
 {
 	@Override
 	public int getSizeInventory() 

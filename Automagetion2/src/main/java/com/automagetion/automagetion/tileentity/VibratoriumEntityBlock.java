@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class VibratoriumEntityBlock extends ModStorageBlock
+public abstract class VibratoriumEntityBlock extends ModStorageBlock
 {
 	public Icon[] icons = new Icon[7];
 	private String textureName = "Vibratorium";
@@ -21,15 +21,15 @@ public class VibratoriumEntityBlock extends ModStorageBlock
 	public VibratoriumEntityBlock()
 	{
 		super(Material.iron);
-		this.setBlockName("vibratorium");
-		this.setBlockTextureName(Main.MODID + ":" + "vibratorium");
+		//this.setBlockName("vibratorium");
+		//this.setBlockTextureName(Main.MODID + ":" + "vibratorium");
 		this.setHardness(2);
 		this.setResistance(6);
 		this.setHarvestLevel("pickaxe", 2);
 		this.setCreativeTab(ModItems.tabAutomagetion);
 	}
 
-	@Override
+	/*@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) 
 	{
 		// TODO Auto-generated method stub
@@ -99,5 +99,5 @@ public class VibratoriumEntityBlock extends ModStorageBlock
 			id = (id == 2) ? 2 : id;
 			return this.icons[id];
 		}
-	}
+	}*/
 }
